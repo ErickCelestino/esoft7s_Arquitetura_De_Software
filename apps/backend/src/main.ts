@@ -5,6 +5,9 @@
 
 import express from 'express';
 import cors from 'cors';
+import { sharedUtilFormatting } from '@esoft7s/shared/util-formatting';
+
+sharedUtilFormatting()
 
 const app = express();
 app.use(cors())
