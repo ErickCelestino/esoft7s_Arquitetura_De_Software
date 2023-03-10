@@ -1,4 +1,7 @@
+import { sharedUtilFormatting } from '@esoft7s/shared/util-formatting';
 import './app.element.scss';
+
+sharedUtilFormatting()
 
 export class AppElement extends HTMLElement {
   public static observedAttributes = [];
@@ -6,7 +9,9 @@ export class AppElement extends HTMLElement {
   connectedCallback() {
     const title = 'frontend';
 
-    fetch('http://localhost:3333/api').then(response => response.json()).then(console.log)
+    fetch('http://localhost:3333/api')
+      .then(response => response.json())
+      .then(console.log)
 
     this.innerHTML = `
     <div class="wrapper">

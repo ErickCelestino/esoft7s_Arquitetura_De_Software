@@ -2,7 +2,9 @@
   "name": "esoft7s",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "echo ola"
+  },
   "private": true,
   "devDependencies": {
     "@nrwl/eslint-plugin-nx": "15.8.5",

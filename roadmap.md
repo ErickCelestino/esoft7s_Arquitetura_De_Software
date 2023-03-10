@@ -13,3 +13,7 @@ nx generate @nrwl/express:application backend --frontendProject=frontend
 ```sh
 nx generate @nrwl/workspace:remove backend-e2e
 ```
+
+```sh
+npm i -D cors @types/cors
+```
